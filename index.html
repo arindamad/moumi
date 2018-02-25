@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+</head>
+<style>
+    body{
+        font-family: 'Montserrat', sans-serif;
+        color: #005C63;
+        background: #00DFEF;
+    }
+    .typer{
+        width: 100%;
+        float: left;
+    }
+    .text-typer{
+        width: 100%;
+        float: left;
+        font-size:4vw;
+        padding: 0;
+        margin: 0px;
+        box-sizing: border-box;
+        
+    }
+</style>
+
+<body>
+    <div class="typer">
+        <div class="text-typer"><h1>HI! I'm Arindam &nbsp;</h1></div> 
+        <div class="text-typer">
+        <h1 id="example"></h1></div>          
+      </div>
+
+
+          <!--javascript links-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/typer.js"></script>
+
+    <script type="text/javascript">
+        $("#example").typer({
+            strings: [
+                "I would like to see smile on your face.",
+                "Everyday",
+                "Every time",
+                "Every second",
+                "Every milisecond",
+                "Forever",
+            ]
+        });
+    </script>
+</body>
+</html>
